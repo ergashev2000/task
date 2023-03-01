@@ -1,16 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprav</title>
+    <title>Sprav.uz</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <a href="#">
+                <img src="./images/logo.svg" alt="Logo" class="header__logo">
+            </a>
+            <div class="lang">
+                <span class="lang__item">Ру</span>
+                <span class="lang__item">O‘z</span>
+                <span class="lang__item">En</span>
+                <select class="lang__select">
+                    <option value="ru">Ру</option>
+                    <option value="uz">O‘z</option>
+                    <option value="en">En</option>
+                </select>
+            </div>
+        </header>
+    </div>
+    <section class="container">
+        <div class="navbar">
+            <div>
+                <img src="./images/menu.svg" alt="Menu" class="menu__btn">
+            </div>
+            <div class="search">
+                <select name="region" id="region" class="select__region">
+                    <option value="Ташкент" selected>Ташкент</option>
+                    <option value="Фергана">Фергана</option>
+                    <option value="Самарканд">Самарканд</option>
+                </select>
+                <input type="search" name="search" class="search__input" placeholder="Поиск">
+                <span><img src="./images/search.svg" alt="Search icon"></span>
+            </div>
+        </div>
+    </section>
+    <hr class="line">
+
+    <section class="container">
+        <div class="main__content">
+            <main>
+                <h2 class="main__title"><span>A-STORE.UZ</span> ФИРМЕННЫЙ МАГАЗИН</h2>
+                <p>
+                    Контактные данные компании «GOODZONE МАГАЗИН БЫТОВОЙ ТЕХНИКИ И ЭЛЕКТРОНИКИ» — телефоны,
+                    местонахождение,
+                    режим работы, виды деятельности и другая полезная информация. Пожалуйста, сообщите огранизации, что
+                    вы
+                    нашли
+                    их контакты на сайте Справочник Ташкента — Sprav.uz.
+                </p>
+                <div class="box__content">
+                    <div class="head__content">
+                        <div class="product">
+                            <img src="./images/placholder.svg" alt="Image">
+                            <div class="head__content--title">
+                                <h3>XIAOMI</h3>
+                                <p>
+                                    с 2022 года
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filial">
+                        <select name="filial" id="filial">
+                            <option value="Филиалы" selected disabled>Филиалы</option>
+                            <option value="Филиалы">Филиалы1</option>
+                            <option value="Филиалы">Филиалы2</option>
+                        </select>
+                        <img src="./images/map.png" alt="Map" class="map">
+                    </div>
+                    <h4><img src="./images/location.svg" alt="location"> Ташкент, Шайхантахурский р-н, пр-т Амира
+                        Темура, 129Б</h4>
+                    <h4 class="location"><img src="./images/pin.svg" alt="pin">I MAXI супермаркет, ЮНУСАБАДСКИЙ РАЙОННЫЙ СУД ПО УГОЛОВНЫМ
+                        ДЕЛАМ</h4>
+                    <div class="contact">
+                        <div class="phone">
+                            <img src="./images/phone.svg" alt="Phone numbers">
+                            <div>
+                                <h4 id="phone">+998 71 207-XX-XX</h4>
+                                <button id="show-number">Показать номер</button>
+                            </div>
+                        </div>
+                        <div class="working--time">
+                            <img src="./images/timer.svg" alt="working time">
+                            <div>
+                                <h5>Сегодня <span>с 10 до 21</span></h5>
+                                <h5>Перерыв <span>без перерыва</span></h5>
+                            </div>
+                        </div>
+                        <div class="network">
+                            <a href="https://a-store.uz/" target="_blank"><img src="./images/globus.svg" alt="Site">
+                                a-store.uz</a>
+                            <a href="mailto:example@gmail.com" target="_blank"><img src="./images/email.svg"
+                                    alt="Email pochta">
+                                Показать e-mail</a>
+                        </div>
+                    </div>
+                    <p class="description">
+                        Различное профессиональное музыкальное оборудование. Бесплатная доставка музыкальных
+                        инструментов и платная – аксессуаров, таких как струны, подставки и т.д. в пределах города
+                        Ташкента.
+                    </p>
+                </div>
+                <div class="tab-container">
+                    <ul class="tab-header">
+                        <li class="active" data-tab="tab-1">Информация</li>
+                        <li data-tab="tab-2">Фотогалерея</li>
+                        <li data-tab="tab-3">График работы</li>
+                        <li data-tab="tab-4">Виды деятельности</li>
+                    </ul>
+                    <div class="prev-btn">&#10094;</div>
+                    <div class="next-btn">&#10095;</div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-item active">Информация content</div>
+                        <div id="tab-2" class="tab-item">Фотогалерея content</div>
+                        <div id="tab-3" class="tab-item">График работы content</div>
+                        <div id="tab-4" class="tab-item">Виды деятельности content</div>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="bar">
+
+                </div>
+            </aside>
+        </div>
+    </section>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
